@@ -228,8 +228,8 @@ nav {
 }
 
 /* section 2 */
-.feature_section{
-    width: 100%;
+.feature_section {
+  width: 100%;
 }
 .section_two_sub1 {
   margin: 0 auto;
@@ -291,5 +291,68 @@ footer div:nth-of-type(2) {
 /* *******Service Page******* */
 /* ************************* */
 
+/* .services_html_section-1{
 
+} */
+.services_html_section-1_sub1 {
+  margin-bottom: 20px;
+}
+.services_html_section-1_sub1 img {
+  width: 100%;
+}
+.services_html_section-1_sub2 {
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.services_html_main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.services_html_main div {
+  flex: 0 1 580px;
+  padding: 20px;
+  border: 0.5px solid black;
+  margin-bottom: 40px;
+  text-align: justify;
+  background: rgba(247, 244, 244, 0.945);
+  line-height: 1.5rem;
+}
+.services_html_main div button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.services_html_main div button:hover {
+  background-color: rgba(243, 233, 233, 0.945);
+  cursor: pointer;
+}
 
+.services_html_section-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.services_html_section-2 div {
+  flex: 0 1 580px;
+}
+.services_html_footer {
+  text-align: center;
+  margin: 40px 0;
+}
+.services_html_section-2 div ul {
+  list-style-type: square;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+.services_html_section-2 div p {
+  line-height: 1.5rem;
+}
+
+.services_html_section-2 div img {
+  width: 100%;
+  border-radius: 3px;
+}
