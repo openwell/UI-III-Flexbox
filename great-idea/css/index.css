@@ -137,6 +137,7 @@ html,
 body {
   height: 100%;
   font-family: "Titillium Web", sans-serif;
+  padding: 10px;
 }
 
 h1,
@@ -165,15 +166,16 @@ nav {
   justify-content: space-between;
 }
 .nav {
-  flex: 5;
+  flex: 0 1 800px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   color: rgb(195, 205, 214);
   text-align: center;
 }
 .nav li {
-  flex: 1;
+  flex: 0 1 80px;
   padding: 20px;
 }
 .nav li:hover {
@@ -183,11 +185,18 @@ nav {
   cursor: pointer;
 }
 .logo_wrapper {
-  flex: 1;
+  flex: 0 1 200px;
   padding: 20px;
 }
 .logo_wrapper img {
   width: inherit;
+}
+a:active,
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(195, 205, 214);
 }
 
 /* section 1 */
@@ -223,7 +232,7 @@ nav {
   padding-right: 30px;
 }
 .main_section-image img {
-  width: inherit;
+  width: 100%;
   margin-right: 0px;
 }
 
@@ -242,7 +251,7 @@ nav {
 }
 .section_two_sub1-features,
 .section_two_sub1-about {
-  flex: 0 0 570px;
+  flex: 0 1 570px;
   text-align: justify;
   margin-top: 20px;
 }
@@ -262,7 +271,7 @@ nav {
 .section_two_sub3-service,
 .section_two_sub3-product,
 .section_two_sub3-visions {
-  flex: 0 0 370px;
+  flex: 0 1 370px;
   text-align: justify;
   margin-top: 20px;
 }
@@ -296,10 +305,13 @@ footer div:nth-of-type(2) {
 } */
 .services_html_section-1_sub1 {
   margin-bottom: 20px;
+  background-image: url("../img/services-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 225.65px;
 }
-.services_html_section-1_sub1 img {
-  width: 100%;
-}
+
 .services_html_section-1_sub2 {
   margin-bottom: 20px;
   text-align: justify;
@@ -355,4 +367,79 @@ footer div:nth-of-type(2) {
 .services_html_section-2 div img {
   width: 100%;
   border-radius: 3px;
+}
+/* ************************* */
+/* *******Product Page******* */
+/* ************************* */
+
+.products_html_section-1_sub1 {
+  margin-bottom: 20px;
+  background-image: url("https://vignette.wikia.nocookie.net/gameofthrones/images/0/0a/707_Army_of_the_Dead.jpg/revision/latest?cb=20170828114140");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 225.65px;
+}
+
+.products_html_section-1_sub2 {
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+.products_html_main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.products_html_main div {
+  flex: 0 1 580px;
+  padding: 20px;
+  border: 0.5px solid black;
+  margin-bottom: 40px;
+  text-align: justify;
+  background: rgba(247, 244, 244, 0.945);
+  line-height: 1.5rem;
+}
+.products_html_main div button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.products_html_main div button:hover {
+  background-color: rgba(243, 233, 233, 0.945);
+  cursor: pointer;
+}
+
+.products_html_section-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.products_html_section-2 div {
+  flex: 0 1 580px;
+}
+.products_html_footer {
+  text-align: center;
+  margin: 40px 0;
+}
+.products_html_section-2 div ul {
+  list-style-type: square;
+  padding: 20px;
+  line-height: 1.5rem;
+}
+.products_html_section-2 div p {
+  line-height: 1.5rem;
+}
+
+.products_html_section-2 div img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+@media (max-width: 500px) {
+  .nav li {
+    font-size: 10px;
+  }
 }
